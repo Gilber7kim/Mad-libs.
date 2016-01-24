@@ -1,7 +1,7 @@
 from random import randint
 import time
-import os,sys
-import sys,string
+import os
+import sys
 import string
 
 print "Welcome to Mr.Gilbert's Mad Libs Laboratory!"
@@ -26,4 +26,15 @@ body2 = raw_input("Type in any part of the body\n*")
 pnoun3 = raw_input("Your plural noun is\n*")
 number = raw_input("Type in any number\n*")
 
-print "There are many %s ways to choose a/an %s to read. \nFirst, you could ask for recommendations from your friends and %s. \nJust don't ask %s. \nIf your friends and family are no help, try checking out the %s Review in The %s Times. \nIf the %s featured there are too %s for your taste, try something a litter more low-%s. \nYou could also choose a book the %s-fashioned way. \nHead to your local library or %s and browse the shelves until something catches your %s. \nWith all the time you'll save not having to search for %s, you can read %s more books!" % (adj1, noun1, pnoun1, female, noun2, city, pnoun2, adj2, body, adj3, place, body2, pnoun3, number)
+print "There are many %s ways to choose a/an %s to read." % (adj1, noun1)
+print "First, you could ask for recommendations from your %s." % (pnoun1)
+print "Just don't ask %s." % (female)
+print "If your friends and family are no help,"
+print "try checking out the %s Review in The %s Times." % (noun2, city)
+print "If the %s featured there are too %s for your taste," % (pnoun2, adj2)
+print "try something a little more low-%s." % (body)
+print "You could also choose a book the %s-fashioned way." % (adj3)
+print "Head to your local library or %s and" % (place)
+print "browse the shelves until something catches your %s." % (body2)
+print "With all the time you'll save not having to search for %s," % (pnoun3)
+print "you can read %s more books!" % (number)
